@@ -987,10 +987,21 @@ body {
         margin-top: 5px;
     }
 
+    .navigation>a {
+        font-size: 14px;
+    }
+
+    .navigation>button {
+        width: 78px;
+        height: 30px;
+        font-size: 14px;
+    }
+
     .navbanner>.banner {
         width: 768px;
         margin: 0px auto;
     }
+
 
     /* farmers */
 
@@ -1192,14 +1203,14 @@ body {
     .offlineshop {
         background-color: white;
         margin: 0px auto;
-        height: 1000px;
+        height: 801.17px;
         display: grid;
         grid-template-rows: 13% auto;
     }
 
     .offlineshop>.content {
         margin: 0% auto;
-    
+
     }
 
     .offlineshop>.content>.popularcity>h1 {
@@ -1218,17 +1229,17 @@ body {
 
     }
 
-    
-.offlineshop>.content>.popularcity>.cards>.card>.name {
-    width: 217px;
-    height: 39.63px;
-    border-radius: 0px 0px 14px 14px;
-    background: #789B8D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
+    .offlineshop>.content>.popularcity>.cards>.card>.name {
+        width: 217px;
+        height: 39.63px;
+        border-radius: 0px 0px 14px 14px;
+        background: #789B8D;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
 
     .offlineshop>.content>.popularcity>.cards>.card>.name>h6 {
         color: #CAE7CF;
@@ -1238,11 +1249,59 @@ body {
         font-weight: 5;
         line-height: normal;
     }
-   
+
     .offlineshop>.content>.map>.mapview {
 
         width: 581px;
         height: 321.098px;
         background-color: #CAE7CF;
     }
+
+    /* footer */
+
+    .footer {
+        height: 576.5px;
+        background: #D0DCD2;
+        display: grid;
+        grid-template-rows: auto 100px;
+    }
+
+    .footer>.content>.card>h1 {
+        margin-top: 28px;
+        margin-bottom: 21px;
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px;
+    }
+
+    .footer>.content>.card>h2 {
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 15px;
+        letter-spacing: 0.4px;
+    }
+
+    .footer>.iconfooter {
+        border-radius: 67px 67px 0px 0px;
+        background: #33603A;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .footer>.iconfooter>.icons>.icon>img {
+        height: 24px;
+        width: 24px;
+    }
+
+    .footer>.iconfooter>.copyright>h6 {
+        font-size: 10px;
+    }
+
 }
