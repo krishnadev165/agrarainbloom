@@ -784,6 +784,7 @@ body {
     .farmers>.cards>.card {
         width: 243.606px;
         height: 381.043px;
+        box-shadow: 4px 10px 10px 0px rgba(0, 0, 0, 0.25);
     }
 
     .farmers>.cards>.card>h3 {
@@ -1163,8 +1164,9 @@ body {
 
     .aflowers {
         background-color: white;
-        margin: 0px 20px;
+        margin: 0px auto;
         height: 439.161px;
+        width: 768px;
         display: grid;
         grid-template-rows: 15% auto;
     }
@@ -1172,6 +1174,7 @@ body {
     .aflowers>.cards {
         margin: 0px 30px;
         display: flex;
+        column-gap: 10px;
         justify-content: space-evenly;
         align-items: center;
         flex-wrap: wrap;
@@ -1184,4 +1187,62 @@ body {
         box-shadow: 4px 10px 20px 0px rgba(0, 0, 0, 0.25);
     }
 
+    /* offlineshop */
+
+    .offlineshop {
+        background-color: white;
+        margin: 0px auto;
+        height: 1000px;
+        display: grid;
+        grid-template-rows: 13% auto;
+    }
+
+    .offlineshop>.content {
+        margin: 0% auto;
+    
+    }
+
+    .offlineshop>.content>.popularcity>h1 {
+        color: #5E5E5E;
+        font-size: 18px;
+        font-family: 'Libre Baskerville', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .offlineshop>.content>.popularcity>.cards>.card {
+
+        width: 104.579px;
+        height: 125.372px;
+
+    }
+
+    
+.offlineshop>.content>.popularcity>.cards>.card>.name {
+    width: 217px;
+    height: 39.63px;
+    border-radius: 0px 0px 14px 14px;
+    background: #789B8D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+    .offlineshop>.content>.popularcity>.cards>.card>.name>h6 {
+        color: #CAE7CF;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: normal;
+        font-weight: 5;
+        line-height: normal;
+    }
+   
+    .offlineshop>.content>.map>.mapview {
+
+        width: 581px;
+        height: 321.098px;
+        background-color: #CAE7CF;
+    }
 }
