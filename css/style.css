@@ -286,7 +286,7 @@ body {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows: 25% auto 20%;
+    grid-template-rows: 25% auto 30%;
 }
 
 .florist>.cards>.card>.layer>.topnav {
@@ -544,7 +544,7 @@ body {
 
 .offlineshop>.content {
     margin: 0% 118px;
-    
+
 }
 
 .offlineshop>.content>.popularcity>h1 {
@@ -913,11 +913,11 @@ body {
         grid-template-rows: 8% auto;
     }
 
-    .offlineshop>.content{
+    .offlineshop>.content {
         width: 788px;
     }
 
-    .offlineshop>.content>.popularcity>h1{
+    .offlineshop>.content>.popularcity>h1 {
         font-size: 18px;
     }
 
@@ -928,7 +928,7 @@ body {
     .offlineshop>.content>.popularcity>.cards>.card {
 
         width: 139.138px;
-height: 155px;
+        height: 155px;
     }
 
     .offlineshop>.content>.popularcity>.cards>.card>.name {
@@ -936,67 +936,78 @@ height: 155px;
         height: 47px;
     }
 
-    .offlineshop>.content>.popularcity>.cards>.card>.name>h6{
+    .offlineshop>.content>.popularcity>.cards>.card>.name>h6 {
         font-size: 20px;
     }
 
-    .offlineshop>.content>.map>.mapview{
+    .offlineshop>.content>.map>.mapview {
         width: 785px;
-height: 483px;
+        height: 483px;
     }
 
     /* footer */
-    .footer{
+    .footer {
         height: 576.5px;
         grid-template-rows: auto 100px;
-        
+
     }
+
     .footer>.content {
         width: 1024px;
         margin: 0% auto;
         justify-content: space-around;
     }
 
-    .footer>.content>.card>h1{
+    .footer>.content>.card>h1 {
         font-size: 20px;
     }
-    
-.footer>.content>.card>h2{
-    font-size: 16px;
-    margin-bottom: 10px;
-}
+
+    .footer>.content>.card>h2 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
 
 }
 
 /* media query above 768px screen */
 
-@media only screen and (min-width:768px) and (max-width:1023px){
+@media only screen and (min-width:768px) and (max-width:1023px) {
 
-    .navbanner{
+    .navbanner {
 
         height: 747px;
-    
+
     }
-    
+
     .navbar {
         width: 768px;
         margin: 0px auto;
         margin-top: 5px;
     }
 
-    .navbanner>.banner{
+    .navbanner>.banner {
         width: 768px;
         margin: 0px auto;
     }
 
     /* farmers */
 
-    .farmers{
+    .farmers {
         width: 768px;
+        height: 700px;
         margin: 0px auto;
+        grid-template-rows: 13% auto;
     }
 
-    .farmers>.cards{
+    .farmers>.heading {
+        display: flex;
+        align-items: end;
+        font-size: 24px;
+        color: #33603A;
+        letter-spacing: 1px;
+    }
+
+    .farmers>.cards {
         padding-left: 20px;
         overflow: auto;
         column-gap: 20px;
@@ -1004,12 +1015,172 @@ height: 483px;
         justify-content: flex-start;
     }
 
+    .farmers>.cards::-webkit-scrollbar {
+        display: none;
+    }
+
     .farmers>.cards>.card>h3 {
         width: 223.606px;
         font-size: 18px;
+        white-space: pre-wrap;
         /* margin-left: 20px; */
         line-height: 30px;
     }
-    
+
+    .farmers>.cards>.card3 {
+        margin-right: 20px;
+    }
+
+    /* Florist */
+
+    .florist {
+        width: 768px;
+        margin: 0px auto;
+        background-color: white;
+        height: 415px;
+        display: grid;
+        grid-template-rows: 15% auto;
+        justify-items: center;
+    }
+
+    .florist>.cards {
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        white-space: nowrap;
+        overflow: auto;
+    }
+
+    .florist>.cards::-webkit-scrollbar {
+        display: none;
+    }
+
+    .florist>.cards>.card {
+        background-color: aliceblue;
+        width: 260px;
+        height: 252.411px;
+        border-radius: 14px;
+        -webkit-border-radius: 14px;
+        -moz-border-radius: 14px;
+        -ms-border-radius: 14px;
+        -o-border-radius: 14px;
+        white-space: normal;
+        background-position: right;
+
+    }
+
+    .florist>.cards>.card1 {
+        margin-left: 20px;
+
+    }
+
+    .florist>.cards>.card4 {
+        margin-right: 20px;
+    }
+
+    .florist>.cards>.card>.layer>.topnav>.favicon {
+        height: 24px;
+        width: 24px;
+        display: flex;
+        align-items: flex-start;
+
+    }
+
+    .florist>.cards>.card>.layer>.topnav>.left>.circle {
+
+        width: 36.443px;
+        height: 36.443px;
+    }
+
+    .florist>.cards>.card>.layer>.topnav>.left>.name {
+        font-style: normal;
+        font-weight: 5;
+        line-height: 15px;
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+
+    .florist>.cards>.card>.layer>.namebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .florist>.cards>.card>.layer>.namebar>h3 {
+        font-size: 15px;
+        margin-left: 20px;
+        line-height: 25px;
+        font-family: 'Libre Baskerville', sans-serif;
+    }
+
+    .florist>.cards>.card>.layer>.namebar>p {
+        /* padding-top: 5px; */
+        margin-left: 20px;
+        font-size: 12px;
+
+        font-family: 'Libre Baskerville', sans-serif;
+    }
+
+    /* Achievements */
+
+    .achivements {
+        width: 768px;
+        margin: 0px auto;
+        height: 863.355px;
+        background-color: white;
+        display: grid;
+        grid-template-rows: 8% auto;
+    }
+
+    .achivements>.cards>.card {
+        width: 261.401px;
+        height: 321.2px;
+        /* background-color: #CAE7CF; */
+    }
+
+    .achivements>.cards>.card1 {
+        width: 340px;
+    }
+
+    .achivements>.cards>.card4 {
+        width: 340px;
+    }
+
+
+    .achivements>.cards>.card>h1 {
+        font-size: 24px;
+    }
+
+    .achivements>.cards>.card>p {
+        margin-top: 25px;
+        font-size: 16px;
+        line-height: 35px;
+    }
+
+    /* Available Flowers */
+
+    .aflowers {
+        background-color: white;
+        margin: 0px 20px;
+        height: 439.161px;
+        display: grid;
+        grid-template-rows: 15% auto;
+    }
+
+    .aflowers>.cards {
+        margin: 0px 30px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .aflowers>.cards>.card {
+        width: 127.4px;
+        height: 133.12px;
+        border-radius: 14px;
+        box-shadow: 4px 10px 20px 0px rgba(0, 0, 0, 0.25);
+    }
 
 }
