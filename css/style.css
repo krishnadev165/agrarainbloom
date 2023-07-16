@@ -142,6 +142,7 @@ body {
     position: relative;
     height: 524px;
     width: 335px;
+    margin: 24px 15.5px;
     background-color: #33603A;
     border-radius: 14px;
     -webkit-border-radius: 14px;
@@ -155,11 +156,22 @@ body {
     justify-items: center;
     box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.2);
     font-family: 'Libre Baskerville', sans-serif;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
 }
 
 .farmers>.cards>.card:hover {
     height: 572px;
     width: 366px;
+    margin:  0px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
 }
 
 .farmers>.cards>.card>h3 {
@@ -173,6 +185,30 @@ body {
     padding-top: 5px;
     margin-left: 20px;
     margin-bottom: 20px;
+}
+
+.farmers>.cards>.card>h4{
+    display: none;
+    align-self: center;
+    margin-bottom: 20px;
+    color: #8C8C8C;
+    font-weight: 300;
+}
+
+@keyframes farmerbox{
+    from{
+        transform: translateY(30px);
+        -webkit-transform: translateY(30px);
+        -moz-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+        -o-transform: translateY(30px);
+}
+
+}
+
+.farmers>.cards>.card>h4:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .farmers>.cards>.card1 {

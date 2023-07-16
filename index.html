@@ -10,6 +10,33 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
         integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        function farmercard1(){
+            document.getElementById("viewmore1").style.display = "block";
+            document.getElementById("viewmore1").style.animation = "farmerbox";
+            document.getElementById("viewmore1").style.animationDuration = "1s";
+        }
+        function farmercardno1(){
+            document.getElementById("viewmore1").style.display = "none";
+        }
+        function farmercard2(){
+            document.getElementById("viewmore2").style.display = "block";
+            document.getElementById("viewmore2").style.animation = "farmerbox";
+            document.getElementById("viewmore2").style.animationDuration = "1s";
+        }
+        function farmercardno2(){
+            document.getElementById("viewmore2").style.display = "none";
+        }
+        function farmercard3(){
+            document.getElementById("viewmore3").style.display = "block";
+            document.getElementById("viewmore3").style.animation = "farmerbox";
+            document.getElementById("viewmore3").style.animationDuration = "1s";
+        }
+        function farmercardno3(){
+            document.getElementById("viewmore3").style.display = "none";
+        }
+    </script>
 </head>
 
 <body>
@@ -57,23 +84,26 @@
 
                 <!-- Card 1 -->
 
-                <div class="card card1">
+                <div class="card card1" onmouseover="farmercard1()" onmouseleave="farmercardno1()">
                     <h3>Mr. Rajesh, Dahlias Producer</h3>
                     <p>Madurai, Tamil Nadu</p>
+                    <h4 id="viewmore1"> View Profile <i class="bi bi-arrow-right"></i></h4>
                 </div>
 
                 <!-- Card 2 -->
 
-                <div class="card card2">
+                <div class="card card2" onmouseover="farmercard2()" onmouseleave="farmercardno2()">
                     <h3>Mr. Kumar, Lotus Producer</h3>
                     <p>Madurai, Tamil Nadu</p>
+                    <h4 id="viewmore2"> View Profile <i class="bi bi-arrow-right"></i></h4>
                 </div>
 
                 <!-- Card 3 -->
 
-                <div class="card card3">
+                <div class="card card3" onmouseover="farmercard3()" onmouseleave="farmercardno3()">
                     <h3>Mr. Krishna, Roses and Jashmine Producer</h3>
                     <p>Madurai, Tamil Nadu</p>
+                    <h4 id="viewmore3"> View Profile <i class="bi bi-arrow-right"></i></h4>
                 </div>
             </div>
 
